@@ -1,3 +1,4 @@
+//SPDX-License-Identifier : MIT
 pragma solidity ^0.8.8;
 
 import "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol";
@@ -19,7 +20,7 @@ contract FundMe {
         i_owner = msg.sender;
     }
 
-    function fund() public payable {
+    function fundMe() public payable {
         require(msg.value.getConversionRate() >= MINIMUM_USD, "You need to spend more ETH!");
         // require(PriceConverter.getConversionRate(msg.value) >= MINIMUM_USD, "You need to spend more ETH!");
         addressToAmountFunded[msg.sender] += msg.value;
@@ -65,11 +66,11 @@ contract FundMe {
     //receive()  fallback()
 
     fallback() external payable {
-        fund();
+        fundMe();
     }
 
     receive() external payable {
-        fund();
+        fundMe();
     }
 
 }

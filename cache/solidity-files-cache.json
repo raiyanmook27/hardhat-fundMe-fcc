@@ -2,8 +2,8 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "D:\\SolidityProjects\\hardhat-fundMe-fcc\\contracts\\FundMe.sol": {
-      "lastModificationDate": 1659474620642,
-      "contentHash": "083daafc58c46980ea25e502ea1cf3c3",
+      "lastModificationDate": 1659551704142,
+      "contentHash": "b0e4ff514a76233bf3558ee41392b90e",
       "sourceName": "contracts/FundMe.sol",
       "solcConfig": {
         "version": "0.8.8",
@@ -89,8 +89,8 @@
       ]
     },
     "D:\\SolidityProjects\\hardhat-fundMe-fcc\\contracts\\PriceConverter.sol": {
-      "lastModificationDate": 1659474776761,
-      "contentHash": "2b3a815ed88ee5113e23dc743f6c6e2f",
+      "lastModificationDate": 1659550625495,
+      "contentHash": "210d7204292ea3b00e0923edd042c8a4",
       "sourceName": "contracts/PriceConverter.sol",
       "solcConfig": {
         "version": "0.8.8",
@@ -130,6 +130,221 @@
       ],
       "artifacts": [
         "PriceConverter"
+      ]
+    },
+    "D:\\SolidityProjects\\hardhat-fundMe-fcc\\contracts\\test\\MockV3Aggregator.sol": {
+      "lastModificationDate": 1659553532564,
+      "contentHash": "5abc73bd49c829d4a9d55ec639f45625",
+      "sourceName": "contracts/test/MockV3Aggregator.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@chainlink/contracts/src/v0.6/tests/MockV3Aggregator.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": []
+    },
+    "D:\\SolidityProjects\\hardhat-fundMe-fcc\\node_modules\\@chainlink\\contracts\\src\\v0.6\\tests\\MockV3Aggregator.sol": {
+      "lastModificationDate": 1659479237567,
+      "contentHash": "b1f27d8f04303e8c78cd057685d883f6",
+      "sourceName": "@chainlink/contracts/src/v0.6/tests/MockV3Aggregator.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/AggregatorV2V3Interface.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "MockV3Aggregator"
+      ]
+    },
+    "D:\\SolidityProjects\\hardhat-fundMe-fcc\\node_modules\\@chainlink\\contracts\\src\\v0.6\\interfaces\\AggregatorV2V3Interface.sol": {
+      "lastModificationDate": 1659479237395,
+      "contentHash": "6b76a24083942363411bb0b83ffeb997",
+      "sourceName": "@chainlink/contracts/src/v0.6/interfaces/AggregatorV2V3Interface.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./AggregatorInterface.sol",
+        "./AggregatorV3Interface.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "AggregatorV2V3Interface"
+      ]
+    },
+    "D:\\SolidityProjects\\hardhat-fundMe-fcc\\node_modules\\@chainlink\\contracts\\src\\v0.6\\interfaces\\AggregatorInterface.sol": {
+      "lastModificationDate": 1659479237379,
+      "contentHash": "0c9be74e354bca05abc54edfdc49607e",
+      "sourceName": "@chainlink/contracts/src/v0.6/interfaces/AggregatorInterface.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "AggregatorInterface"
+      ]
+    },
+    "D:\\SolidityProjects\\hardhat-fundMe-fcc\\node_modules\\@chainlink\\contracts\\src\\v0.6\\interfaces\\AggregatorV3Interface.sol": {
+      "lastModificationDate": 1659479237411,
+      "contentHash": "79f9f2c352a0b4454d1416042e7f7ae0",
+      "sourceName": "@chainlink/contracts/src/v0.6/interfaces/AggregatorV3Interface.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "AggregatorV3Interface"
       ]
     }
   }

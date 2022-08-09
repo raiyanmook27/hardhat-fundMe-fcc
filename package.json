@@ -1,4 +1,7 @@
 {
+  "name": "hardhat_fund_me",
+  "author": "Raiyan Mukhtar",
+  "version": "1.0.0",
   "devDependencies": {
     "@chainlink/contracts": "^0.4.2",
     "@ethersproject/abi": "^5.6.4",
@@ -24,5 +27,13 @@
     "solidity-coverage": "^0.7.21",
     "typechain": "^8.1.0",
     "typescript": ">=4.5.0"
+  },
+  "scripts": {
+    "test":"yarn hardhat test",
+    "test:staging": "yarn hardhat test --network rinkeby",
+    "lint" : "yarn solhint 'contracts/*.sol",
+    "lint:fix":"yarn solhint 'contracts/*.sol'--fix",
+    "format":"yarn prettier --write .",
+    "coverage":"yarn hardhat coverage"
   }
 }

@@ -4,6 +4,7 @@ require("dotenv").config();
 require("hardhat-deploy");
 require("hardhat-gas-reporter");
 require("solidity-coverage");
+require("solhint");
 
 /** @type import('hardhat/config').HardhatUserConfig */
 
@@ -24,7 +25,14 @@ module.exports = {
       blockConfirmations: 6,
     },
   },
-  gasReporter: {},
+  gasReporter: {
+    enabled: true,
+    outputFile: "gas-reporter.txt",
+    noColors: true,
+    currency: "USD",
+    token: "MATIC",
+    //coinmarketCap: COINMARKETCAP_API_KEY,
+  },
   etherscan: {
     apiKey: ETHERSCAN_API_KEY,
   },

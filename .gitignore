@@ -6,4 +6,5 @@ artifacts
 coverage
 typechain
 .solhint.json
-deploymnents
+deployments
+gas-reporter.txt
